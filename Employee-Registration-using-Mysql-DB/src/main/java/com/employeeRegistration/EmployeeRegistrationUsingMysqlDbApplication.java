@@ -1,0 +1,13 @@
+package com.employeeRegistration;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class EmployeeRegistrationUsingMysqlDbApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(EmployeeRegistrationUsingMysqlDbApplication.class, args);
+	}
+
+}
