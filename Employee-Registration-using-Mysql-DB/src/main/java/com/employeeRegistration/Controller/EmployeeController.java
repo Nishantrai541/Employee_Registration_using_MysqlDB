@@ -25,7 +25,7 @@ import com.employeeRegistration.Services.EmployeeRegistrationService;
 @RequestMapping("api/employee")
 public class EmployeeController {
 
-	private EmployeeRegistrationService employeeService;
+	private final EmployeeRegistrationService employeeService;
 	
 	
 	public EmployeeController(EmployeeRegistrationService employeeService) {

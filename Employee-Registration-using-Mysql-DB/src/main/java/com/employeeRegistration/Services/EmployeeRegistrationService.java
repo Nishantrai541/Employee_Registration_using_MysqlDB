@@ -18,7 +18,7 @@ import com.employeeRegistration.Repository.EmployeeRepo;
 public class EmployeeRegistrationService {
 
 
-	private EmployeeRepo employeeRepo;
+	private final EmployeeRepo employeeRepo;
 	
 	public EmployeeRegistrationService(EmployeeRepo employeeRepo) {
 		super();
