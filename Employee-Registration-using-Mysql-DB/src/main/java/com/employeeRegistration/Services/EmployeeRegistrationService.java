@@ -128,7 +128,7 @@ public class EmployeeRegistrationService {
 				}			 
 			 
 			 //check for new age and existing age is same or not
-			if(!updateEmployee.getEmpDOB().isEqual(updateEmployee.getEmpDOB())) {
+			if(!updateEmployee.getEmpDOB().isEqual(empDetails.getDob())) {
 				
 			 empDetails.setDob(updateEmployee.getEmpDOB());
 				 i++;
