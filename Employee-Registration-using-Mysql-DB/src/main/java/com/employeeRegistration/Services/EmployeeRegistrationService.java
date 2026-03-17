@@ -59,6 +59,20 @@ public class EmployeeRegistrationService {
 	}
 
 	
+	
+	//Method for Get All Employee List
+	public ResponseEntity<List<EmployeeModel>> getAllEmployee() throws Exception {
+				
+		
+		List<EmployeeModel> empList=employeeRepo.findAll();
+		if(empList==null) {
+			throw new Exception("There is no Employee is registered");
+		}else {
+			return ResponseEntity.status(HttpStatus.OK).body(empList);
+		}
+	}
+	
+	
 
 	//Method for Get Employee By employee ID
 	public ResponseEntity<EmployeeModel> getEmployeeById(Long id) throws Exception {
